@@ -64,14 +64,14 @@ export default function PricingSection() {
       <div className="max-w-7xl mx-auto">
         
         {/* Section Header */}
-        <div className="text-center max-w-2xl mx-auto mb-16">
-          <p className="text-[#0066FF] font-semibold tracking-wider text-sm mb-4 uppercase">
+        <div className="text-center mx-auto mb-16">
+          <p className="text-[#0066FF] font-semibold tracking-wider text-base mb-4 uppercase">
             Pricing Plan
           </p>
           <h2 className="text-4xl md:text-5xl font-semibold mb-6 text-gray-900 tracking-tight">
             Find the Right Plan for Your Business
           </h2>
-          <p className="text-gray-500 text-lg leading-relaxed">
+          <p className="text-gray-500 text-lg leading-relaxed max-w-2xl mx-auto">
             Transparent pricing with powerful features. Whether you're just starting out or processing high-volume transactions, we have a plan for you.
           </p>
         </div>
@@ -133,7 +133,7 @@ function PricingCard({
       <div className="relative z-10 flex flex-col h-full">
         {/* Title Row */}
         <div className="flex items-center justify-between mb-4">
-          <h3 className="text-2xl font-semibold">{title}</h3>
+          <h3 className="text-2xl font-semibold font-medium">{title}</h3>
           {badge && (
             <span className="text-[#0066FF] text-[10px] font-bold uppercase tracking-wider">
               {badge}
@@ -153,7 +153,7 @@ function PricingCard({
         </div>
 
         {/* Description */}
-        <p className={`mt-6 text-sm leading-relaxed ${isDark ? 'text-gray-400' : 'text-gray-500'}`}>
+        <p className={`mt-6 text-base font-normal leading-relaxed ${isDark ? 'text-[#FFFFFF]/90' : 'text-gray-500'}`}>
           {description}
         </p>
 

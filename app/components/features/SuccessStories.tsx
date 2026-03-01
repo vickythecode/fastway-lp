@@ -114,14 +114,14 @@ export default function SuccessStories() {
       <div className="max-w-7xl mx-auto relative z-10">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <p className="text-[#0066FF] font-semibold tracking-wider text-sm mb-4 uppercase">
+        <div className="text-center  mx-auto mb-16">
+          <p className="text-[#0066FF] font-semibold tracking-wider text-base mb-4 uppercase">
             Success Story
           </p>
           <h2 className="text-4xl md:text-5xl font-semibold mb-6 text-gray-900 tracking-tight">
             How Businesses Thrive with Finech
           </h2>
-          <p className="text-gray-500 text-lg leading-relaxed max-w-2xl mx-auto">
+          <p className="text-gray-500 text-lg leading-relaxed max-w-2xl mx-auto ">
             Join the growing list of companies that trust Finech to power their payments, banking, and financial services. From startups to enterprises, our platform delivers real results—faster transactions, improved security, and effortless scalability.
           </p>
         </div>
@@ -173,7 +173,7 @@ function TestimonialCard({ quote, name, role, avatar, logo, isDark }: {
     }`}>
       
       {/* Quote Text */}
-      <p className={`text-[17px] leading-relaxed ${isDark ? 'text-gray-200' : 'text-gray-800'}`}>
+      <p className={`md:text-2xl text-lg font-normal leading-relaxed ${isDark ? 'text-gray-200' : 'text-gray-800'}`}>
         "{quote}"
       </p>
 

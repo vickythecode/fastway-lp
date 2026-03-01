@@ -44,14 +44,14 @@ export default function EnterpriseProtection() {
       <div className="max-w-7xl mx-auto">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-20">
-          <p className="text-[#0066FF] font-semibold tracking-wider text-sm mb-4 uppercase">
+        <div className="text-center  mx-auto mb-20">
+          <p className="text-[#0066FF] font-semibold tracking-wider text-base mb-4 uppercase">
             Security & Compliance
           </p>
           <h2 className="text-4xl md:text-5xl font-semibold mb-6 text-gray-900 tracking-tight">
             Enterprise-Grade Protection for Your Business
           </h2>
-          <p className="text-gray-500 text-lg leading-relaxed">
+          <p className="text-gray-500 text-lg leading-relaxed max-w-3xl m-auto">
             Our platform is designed to meet the highest industry standards, ensuring your transactions, customer data, and financial operations remain secure and fully compliant with global regulations.
           </p>
         </div>
@@ -86,7 +86,7 @@ export default function EnterpriseProtection() {
                       {feature.title}
                     </h3>
                   </div>
-                  <p className="text-gray-500 text-sm leading-relaxed pl-8">
+                  <p className="text-[#606060] text-lg leading-relaxed pl-8">
                     {feature.desc}
                   </p>
                 </div>
@@ -110,7 +110,13 @@ export default function EnterpriseProtection() {
 
             {/* Main Feature Image (The Black Credit Card & Badges) */}
             {/* NOTE: Export this entire black card with the floating white badges as one single PNG from Figma! */}
-            <div className="relative w-full h-[80%] z-10">
+            <div className="relative w-full h-[80%] z-10" style={{ 
+                backgroundImage: "url('/images/BackgroundPattern2.png')", 
+                backgroundRepeat: 'repeat',
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                opacity: 100 // Adjust this if the pattern is too harsh or too faint
+              }}>
               <Image 
                 key={securityFeatures[activeIndex].imageSrc}
                 src={securityFeatures[activeIndex].imageSrc} 

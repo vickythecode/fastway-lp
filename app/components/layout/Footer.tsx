@@ -34,7 +34,7 @@ export default function Footer() {
       <div 
         className="absolute inset-10 pointer-events-none z-0" 
         style={{ 
-          backgroundImage: "url('/images/BackgroundPattern.png')", 
+          backgroundImage: "url('/images/BackgroundPattern2.png')", 
           backgroundRepeat: 'repeat',
           backgroundSize: 'auto',
           backgroundPosition: 'center',

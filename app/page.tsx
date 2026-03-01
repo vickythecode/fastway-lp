@@ -12,19 +12,7 @@ import Footer from "./components/layout/Footer";
 
 export default function Home() {
   return (
-    // We apply the background images here via inline style for layering and positioning
-    <main 
-      className="min-h-screen overflow-hidden bg-[#0B1121] relative"
-      style={{
-        // Order: top layer first. Dots repeat, gradient doesn't.
-        // REPLACE PATHS WITH YOUR ACTUAL FILENAMES
-        backgroundImage: 'url(/images/BackgroundPattern.png), url(/images/BackgroundGradient.png)', 
-        backgroundRepeat: 'repeat, no-repeat',
-        backgroundPosition: 'center center, left center',
-        // 'cover' scales the gradient image to cover the height.
-        backgroundSize: 'auto, cover', 
-      }}
-    >
+    <main >
       <Navbar />
       <Hero />
       <FintechFeatures/>

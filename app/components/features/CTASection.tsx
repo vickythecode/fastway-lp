@@ -42,15 +42,15 @@ export default function CTASection() {
           {/* Top Content Area */}
           <div className="relative z-10 flex flex-col items-center text-center pt-24 pb-20 px-6">
             
-            <p className="text-[#0066FF] font-semibold tracking-wider text-sm mb-4 uppercase">
+            <p className="text-[#0066FF] font-semibold tracking-wider text-base mb-4 uppercase">
               Finance Solution
             </p>
             
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold mb-6 text-white tracking-tight max-w-3xl leading-tight">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold mb-6 text-[#FFFFFF] tracking-tight  leading-tight">
               Ready to Scale Your Payments?
             </h2>
             
-            <p className="text-gray-400 text-lg leading-relaxed max-w-2xl mx-auto mb-10">
+            <p className="text-[#FFFFFF]/80 text-2xl leading-relaxed max-w-2xl mx-auto mb-10">
               Join thousands of businesses worldwide using Finech to simplify transactions, enhance security, and drive growth.
             </p>
 

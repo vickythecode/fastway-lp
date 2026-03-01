@@ -5,6 +5,18 @@ export default function FinancialSolutions() {
     // Keep the main section's background, padding, and layout as provided
     <section className="w-full bg-[#0B1121] py-32 px-6 relative overflow-hidden z-20">
       
+      {/* --- NEW: Background Gradient Image at the bottom --- */}
+      <div 
+        className="absolute bottom-0 left-0 w-full h-full pointer-events-none z-0" 
+        style={{ 
+          backgroundImage: "url('/images/BackgroundGradient2.png')", 
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: 'cover',
+          backgroundPosition: 'bottom center',
+          opacity: 0.5 /* Adjust this opacity if you want it brighter/darker */
+        }}
+      />
+
       {/* Pattern Overlay Layer: Positioning is key behind all glass cards */}
       <div 
         className="absolute inset-0 pointer-events-none z-0" 
@@ -24,11 +36,11 @@ export default function FinancialSolutions() {
       <div className="max-w-7xl mx-auto relative z-10">
         
         {/* Section Header */}
-        <div className="text-center max-w-2xl mx-auto mb-16">
-          <p className="text-[#0066FF] font-semibold tracking-wider text-sm mb-4 uppercase">
+        <div className="text-center mx-auto mb-16">
+          <p className="text-[#0066FF] font-semibold tracking-wider text-base mb-4 uppercase">
             Who is it for?
           </p>
-          <h2 className="text-4xl md:text-5xl font-semibold mb-6 text-white tracking-tight">
+          <h2 className="text-4xl md:text-5xl font-semibold mb-6 text-white tracking-tight md:max-w-7xl">
             Financial Solutions for Every Industry
           </h2>
           <p className="text-gray-400 text-lg leading-relaxed max-w-xl mx-auto">

@@ -7,7 +7,7 @@ export default function FintechFeatures() {
         
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <p className="text-[#0066FF] font-semibold tracking-wider text-sm mb-4 uppercase">
+          <p className="text-[#0066FF] font-semibold tracking-wider text-base mb-4 uppercase">
             Why Choose Finech?
           </p>
           <h2 className="text-4xl md:text-5xl font-semibold mb-6 text-gray-900 tracking-tight">
@@ -27,13 +27,7 @@ export default function FintechFeatures() {
             {/* Pattern Overlay Layer - Separated to ensure it sits on the white background */}
             <div 
               className="absolute inset-0 pointer-events-none z-0" 
-              style={{ 
-                backgroundImage: "url('/images/BackgroundPattern.png')", 
-                backgroundRepeat: 'repeat',
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-                opacity: 0.6 // Adjust this if the pattern is too harsh or too faint
-              }}
+              
             />
             
             <div className="relative z-10">
@@ -47,7 +41,13 @@ export default function FintechFeatures() {
               </p>
 
               {/* Transaction Rows */}
-              <div className="flex flex-col gap-3">
+              <div className="flex flex-col gap-3" style={{ 
+                backgroundImage: "url('/images/BackgroundPattern2.png')", 
+                backgroundRepeat: 'repeat',
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                opacity: 100 // Adjust this if the pattern is too harsh or too faint
+              }}>
                 <TransactionRow amount1="$1,237.58" currency1="USD" flag1="/images/usa.png" amount2="€1,130.32" currency2="EUR" flag2="/images/euro.png" />
                 <TransactionRow amount1="$1,237.58" currency1="USD" flag1="/images/usa.png" amount2="£972.29" currency2="GBP" flag2="/images/uk.png" />
                 <TransactionRow amount1="$1,237.58" currency1="USD" flag1="/images/usa.png" amount2="¥186,139.31" currency2="JPY" flag2="/images/Japan.png" />
@@ -67,7 +67,7 @@ export default function FintechFeatures() {
                 backgroundRepeat: 'repeat',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
-                opacity: 0.6 // Adjust this if the pattern is too harsh or too faint
+                opacity: 100 // Adjust this if the pattern is too harsh or too faint
               }}
             />
 
@@ -82,18 +82,24 @@ export default function FintechFeatures() {
               </p>
 
               {/* Increased form width slightly by changing to a 12-column sub-grid (5 spans for images, 7 spans for form) */}
-              <div className="grid sm:grid-cols-12 gap-8 items-center mt-6">
+              <div className="grid sm:grid-cols-12 gap-8 items-center mt-6" style={{ 
+                backgroundImage: "url('/images/BackgroundPattern2.png')", 
+                backgroundRepeat: 'repeat',
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                opacity: 100 // Adjust this if the pattern is too harsh or too faint
+              }}>
                 
                 {/* Left Side: Two Separate Debit Card Images (Takes 5/12) */}
                 <div className="sm:col-span-5 flex flex-col gap-4 w-full justify-center">
                   
                   {/* Card 1 (Black Card) */}
-                  <div className="relative w-full h-[180px] drop-shadow-xl transform hover:-translate-y-2 transition-transform duration-300">
+                  <div className="relative w-full h-[180px] drop-shadow-xl transform hover:-translate-y-2 transition-transform duration-300 z-50">
                     <Image src="/images/debCard1.png" alt="Black Debit Card" fill className="object-contain" />
                   </div>
                   
                   {/* Card 2 (White Card) */}
-                  <div className="relative w-full h-[180px] drop-shadow-xl transform hover:-translate-y-2 transition-transform duration-300">
+                  <div className="relative w-full h-[180px] drop-shadow-xl transform hover:-translate-y-2 transition-transform duration-300 z-50">
                     <Image src="/images/debCard2.png" alt="White Debit Card" fill className="object-contain" />
                   </div>
                   
@@ -157,7 +163,7 @@ export default function FintechFeatures() {
             <div 
               className="absolute inset-0 pointer-events-none z-0" 
               style={{ 
-                backgroundImage: "url('/images/BackgroundPattern.png')", 
+                backgroundImage: "url('/images/BackgroundPattern2.png')", 
                 backgroundRepeat: 'repeat',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
@@ -165,7 +171,7 @@ export default function FintechFeatures() {
               }}
             />
 
-            <div className="relative z-10">
+            <div className="relative z-100 bg-[#FFFFFF]">
               <div className="flex items-center gap-3 mb-4">
                 {/* Replace with your exact icon from Figma */}
                 <Image src="/images/ArrowsOut.png" alt="Scalability" width={24} height={24} className="object-contain" />
@@ -176,7 +182,7 @@ export default function FintechFeatures() {
               </p>
 
               {/* API Table (Using exported Image instead of HTML table) */}
-              <div className="relative w-full rounded-2xl overflow-hidden z-20">
+              <div className="relative w-full rounded-2xl overflow-hidden z-20" >
                 <Image 
                   src="/images/api.png" /* Replace with your actual table image name */
                   alt="API Features Table" 
@@ -195,7 +201,7 @@ export default function FintechFeatures() {
             <div 
               className="absolute inset-0 pointer-events-none z-0" 
               style={{ 
-                backgroundImage: "url('/images/BackgroundPattern.png')", 
+                backgroundImage: "url('/images/BackgroundPattern2.png')", 
                 backgroundRepeat: 'repeat',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
