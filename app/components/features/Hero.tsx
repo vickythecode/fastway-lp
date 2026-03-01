@@ -26,25 +26,25 @@ export default function Hero() {
           </p>
 
           {/* Email Input Form */}
-          <div className="flex items-center bg-white p-1.5 rounded-2xl max-w-md shadow-xl">
-            <div className="pl-4 pr-2 flex items-center text-gray-500">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <rect width="20" height="16" x="2" y="4" rx="2"/>
-                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
-              </svg>
-            </div>
-            <input 
-              type="email" 
-              placeholder="Send your email" 
-              className="flex-1 bg-transparent border-none outline-none text-gray-900 placeholder:text-gray-500 px-2"
-            />
-            <button className="bg-[#0066FF] hover:bg-blue-700 text-white px-6 py-3 rounded-2xl text-sm font-medium transition-colors whitespace-nowrap flex items-center gap-2">
-              Talk to Sales
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M5 12h14M12 5l7 7-7 7"/>
-              </svg>
-            </button>
-          </div>
+<div className="flex items-center bg-white p-1.5 rounded-2xl w-full max-w-sm md:max-w-md shadow-xl">
+  <div className="pl-3 sm:pl-4 pr-1 sm:pr-2 flex items-center text-gray-400">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <rect width="20" height="16" x="2" y="4" rx="2"/>
+      <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+    </svg>
+  </div>
+  <input 
+    type="email" 
+    placeholder="Send your email" 
+    className="flex-1 min-w-0 bg-transparent border-none outline-none text-gray-900 placeholder:text-gray-400 px-2 text-sm sm:text-base"
+  />
+  <button className="bg-[#0066FF] hover:bg-blue-700 text-white px-4 sm:px-6 py-2.5 sm:py-3 rounded-xl sm:rounded-2xl text-xs sm:text-sm font-medium transition-colors whitespace-nowrap flex items-center gap-2 flex-shrink-0">
+    Talk to Sales
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="hidden sm:block">
+      <path d="M5 12h14M12 5l7 7-7 7"/>
+    </svg>
+  </button>
+</div>
         </div>
 
         {/* Right Content - Images */}
