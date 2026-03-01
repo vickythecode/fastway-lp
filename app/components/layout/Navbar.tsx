@@ -7,7 +7,7 @@ export default function Navbar() {
       {/* Logo */}
      <Link href="/" className="relative w-32 h-8 block flex-shrink-0">
   <Image 
-    src="/images/Logo.png" /* Make sure this matches your exact filename in public/images */
+    src="/images/Logo1.png" /* Make sure this matches your exact filename in public/images */
     alt="Finech Logo" 
     fill 
     className="object-contain object-left"
