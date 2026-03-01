@@ -26,7 +26,7 @@ export default function Hero() {
           </p>
 
           {/* Email Input Form */}
-<div className="flex items-center bg-white p-1.5 rounded-2xl w-full max-w-sm md:max-w-md shadow-xl">
+<div className="flex items-center bg-white p-1.5 rounded-2xl w-full max-w-[17rem] md:max-w-md shadow-xl">
   <div className="pl-3 sm:pl-4 pr-1 sm:pr-2 flex items-center text-gray-400">
     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
       <rect width="20" height="16" x="2" y="4" rx="2"/>

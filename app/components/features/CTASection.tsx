@@ -55,7 +55,7 @@ export default function CTASection() {
             </p>
 
             {/* Email Input & Button Container */}
-            <div className="w-full max-w-lg bg-white rounded-full p-1.5 flex items-center shadow-xl focus-within:ring-2 ring-[#0066FF]/50 transition-shadow">
+            <div className="w-full max-w-lg bg-white rounded-2xl md:p-1.5 p-1 flex items-center shadow-xl focus-within:ring-2 ring-[#0066FF]/50 transition-shadow">
               
               {/* Mail Icon */}
               <div className="pl-5 pr-3 text-gray-400 flex-shrink-0">
